@@ -6,22 +6,23 @@
 
 
 
-PortBank é uma aplicação back-end que fornece uma API RestFul para prover serviços de uma instituição financeira fictícia. 
+PortInvestimentos é uma aplicação back-end que fornece uma API RestFul para prover de gestão de investimentos.
 
-A aplicação consiste em possibilitar o cadastro de clientes com suas respectivas contas e a realização de movimentações financeiras credito/debito.
+A aplicação consiste em possibilitar o cadastro de clientes e a gestão de investimentos dos mesmos, registro de compra, venda e posse de ativos.
 
 ## Requisitos de negócios
 - [x] Possibilitar o cadastro de clientes
-- [ ] Possibilitar a criação de contas para um cliente (corrente, poupança, investimento)
-- [ ] Listar todas as contas que um cliente possui.
-- [ ] Possibilitar a manutenção de contas dos clientes(criar, inativar, cancelar)
-- [ ] Possibilitar o "login" dos clientes apenas por CPF e senha.
-- [ ] Mostrar a composição de saldo do cliente com base em todas as contas do mesmo na instituição.
-- [ ] Possibilitar a exibição da composição de saldo de apenas uma das contas do cliente.
-- [ ] Possibilitar o cliente movimentar dinheiro entre suas propárias contas (credito/debito) 
-- [ ] Possibilitar o cliente movimentar dinheiro para contas de terceiros (credito/debito)
-- [ ] Listar todas as transações realizadas por um cliente
-- [ ] Possibilitar consulta inteligente de operações realizadas por um cliente (data, valor, descrição operação).
+- [ ] Possibilitar o registro da compra de um ativos
+- [ ] Possibilitar o regitro de venda de ativos 
+- [ ] Possibilitar a consulta de ativos sobre posse
+- [ ] Possibilitar o calculo de preço medio de ativos 
+- [ ] Possibilitar o calculo de ganho com a valorização do ativo 
+- [ ] Possibilitar uma visão de carteira de ativos 
+- [ ] Possibilitar a visão do tamanho em porcentagem de um ativo em carteira 
+- [ ] Possibilitar o regitro de aplicações de renda variavel e fixa
+- [ ] Possibilitar o regitro de pagamentos de dividendos 
+- [ ] Possibilitar o regitro de pagamentos de rendimentos  
+- [ ] Possibilitar o regitro de pagamentos de JCPs
 
 ## Requisitos de técnicos
 - [ ] Atender requisições de pedidos de JSON e XML(Content negotiation)
