@@ -2,7 +2,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/srportto/portinvestimentos-pi/blob/master/LICENSE)
 
 ![PortInvestimentos](https://github.com/srportto/portinvestimentos-pi/blob/master/midia/pi-icon-png.png)
-# Sobre o projeto
+# Sobre o projeto PI
 
 
 
