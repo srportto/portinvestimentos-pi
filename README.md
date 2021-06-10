@@ -1,7 +1,7 @@
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/srportto/portbank/blob/main/LICENSE)
 
-![Portbank](https://github.com/srportto/portbank/blob/main/outros/iconportbank.jpg)
+![PortInvestimentos](https://github.com/srportto/portinvestimentos-pi/blob/master/midia/pi-icon-png.png)
 # Sobre o projeto
 
 
