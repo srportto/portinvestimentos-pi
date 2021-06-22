@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:frontend/utils/consts.dart';
+import 'package:frontend/widgets/cor_estado_widget.dart';
 import 'package:frontend/widgets/espaco_widget.dart';
 import 'package:frontend/widgets/input_style_widget.dart';
 
@@ -135,7 +136,7 @@ class _CadastroPageState extends State<CadastroPage> {
     return null;
   }
 
-  _estilizarInputNomeCompleto(){
+  _estilizarInputNomeCompleto() {
     return InputDecoration(
       labelText: "Nome Completo",
       labelStyle: TextStyle(
@@ -266,13 +267,15 @@ class _CadastroPageState extends State<CadastroPage> {
     return Row(
       children: [
         Checkbox(
+          checkColor: Colors.blue,
+          fillColor: MaterialStateProperty.resolveWith(getCorParaEstadoWidget),
           value: this._showPassword,
           onChanged: (newValue) {
             setState(() {
               this._showPassword = newValue;
             });
           },
-          activeColor: Colors.blue,
+          // activeColor: Colors.blue,
         ),
         Text(
           "Mostrar senha",

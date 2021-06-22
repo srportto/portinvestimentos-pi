@@ -6,6 +6,7 @@ import 'package:frontend/utils/app_colors_gradients.dart';
 import 'package:frontend/utils/app_images.dart';
 import 'package:frontend/utils/consts.dart';
 import 'package:flutter/material.dart';
+import 'package:frontend/widgets/cor_estado_widget.dart';
 import 'package:frontend/widgets/linha_divisoria_widget.dart';
 
 class LoginPage extends StatefulWidget {
@@ -63,25 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                 style: TextStyle(fontSize: 11),
               ),
               //---------Inicio
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                // ignore: deprecated_member_use
-                child: RaisedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CadastroPage(),
-                      ),
-                    );
-                  },
-                  child: Text("Cadastre-se"),
-                  color: portInvestColor_write,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                ),
-              ),
+              _montaBotaoCadastro(),
 
               //---------fim
             ],
@@ -165,13 +148,16 @@ class _LoginPageState extends State<LoginPage> {
 
   _montaCheckBox(context) {
     return Checkbox(
+      checkColor: Colors.blue,
+      fillColor: MaterialStateProperty.resolveWith(getCorParaEstadoWidget),
       value: _showPassword,
       onChanged: (newValue) {
         setState(() {
           _showPassword = !_showPassword!;
         });
       },
-      activeColor: Colors.blue,
+
+      // activeColor: Colors.blue,
     );
   }
 
@@ -248,5 +234,31 @@ class _LoginPageState extends State<LoginPage> {
     //------------------------------------------------------
     // #fim -> acao que faz ir para outra tela (comentada)
     //-------------------------------------------------------
+  }
+
+  _montaBotaoCadastro() {
+    return Container(
+      width: 10,
+      height: 50,
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 2),
+        // ignore: deprecated_member_use
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => CadastroPage(),
+              ),
+            );
+          },
+          child: Text("Cadastre-se"),
+          color: portInvestColor_write,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
+    );
   }
 }
