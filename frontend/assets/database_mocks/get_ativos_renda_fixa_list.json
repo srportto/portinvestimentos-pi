@@ -1,0 +1,27 @@
+[
+  {
+    "tipo_ativo": "renda fixa",
+    "valor_investido": 12650.00,
+    "porcentagem_carteira": "55%",
+    "ativos": [
+      {
+        "id": 1,
+        "identificacao": "RDB Nubank",
+        "tipo": "RDB",
+        "setor_economia": "financeiro",
+        "valor_investido": 6325.00,
+        "porcentagem_geral_carteira": "27,5%",
+        "status": "em_carteira"
+      },
+      {
+        "id": 2,
+        "identificacao": "poupança itau",
+        "tipo": "poupança",
+        "setor_economia": "financeiro",
+        "valor_investido": 6325.00,
+        "porcentagem_geral_carteira": "27,5%",
+        "status": "em_carteira"
+      }
+    ]
+  }
+]

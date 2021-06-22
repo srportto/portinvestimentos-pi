@@ -1,0 +1,94 @@
+
+
+tb_investimentos
+	Id						
+	Cnpj_gestora
+	Setor_economia
+		SAUDE
+		CONSUMO  
+		TELECOMUNICACOES
+		FINANCEIRO 
+		ELETRICO
+		SANEAMENTO 
+		GAS 
+		AGUA 
+		TECNOLOGIA 
+		
+	descrição_cliente
+	tipo_renda_ativo
+		RENDA_FIXA
+		RENDA_VARIAVEL
+		
+	tipo_ativo 	
+		renda_fixa
+			LC
+			LCI
+			LCA
+			CDB
+			CDI 
+			RDB
+			Poupanca
+			fgts
+			tesouro 
+
+		renda_variavel
+			ACAO
+			FII
+			OPCOES_COMPRA 
+			OPCOES_VENDA 
+			
+	descricao_ativo 
+
+	valor_investido
+	data_inicio
+	data_atualizacao 
+	status
+		0 - EM_CARTEIRA 
+		1 - posicao_zerada
+		3 - ativo desejado
+	
+		
+	Analise_cliente 
+		0-Prioridade de compra
+		1-Subir posição
+		2-Manter posição
+		3-Congelar posição
+		4-Avaliando (C/V)
+		5-Vender
+		6-Lista de desejos
+
+	Porcentagem_frente_acerteira
+	
+tb_renda_fixa
+	id
+	data_liquidez
+	valor_rentabilizadade_anual
+	indicador_liquidez_diaria 
+	
+	
+	
+tb_renda_variavel
+	id
+	preco_medio
+	qtde_papeis  
+	preco_alvo 
+	Valor_recebido_JCP
+	Valor_recebido_dividendos 
+	valor_recebido_rendimentos 
+	
+Operacoes
+		id
+		tipo_operacao 
+			COMPRA
+			VENDA
+			APORTE
+		
+		id_investimento 
+        Valor_compra
+		valor_venda
+		qtde_ativos
+	
+	
+		
+	
+	

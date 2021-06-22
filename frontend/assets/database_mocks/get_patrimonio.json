@@ -1,0 +1,8 @@
+{
+  "patrimonio": {
+    "valor": 23000.00,
+    "porcentagem_renda_fixa": 55,
+    "porcentagem_renda_variavel": 45,
+    "qtde_ativos_carteira": 4
+  }
+}

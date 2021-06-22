@@ -1,0 +1,27 @@
+{
+  "tipo_ativo": "renda variavel",
+  "valor_investido": 10350.00,
+  "porcentagem_carteira": "45%",
+  "ativos": [
+    {
+      "id": 3,
+      "identificacao": "ITSA4",
+      "tipo": "ação",
+      "setor_economia": "financeiro",
+      "valor_investido": 6900.00,
+      "porcentagem_geral_carteira": "30%",
+      "status": "em_carteira"
+    },
+    {
+      "id": 4,
+      "identificacao": "MXRF11",
+      "tipo": "FII",
+      "setor_economia": "financeiro",
+      "valor_investido": 3450.00,
+      "porcentagem_geral_carteira": "15%",
+      "status": "em_carteira"
+    }
+  ]
+}
+
+
